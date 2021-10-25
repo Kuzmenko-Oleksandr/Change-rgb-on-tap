@@ -49,7 +49,7 @@ class MainWidgetState extends State<MainWidget> {
             title: const Text('Tap anywhere', style: TextStyle(fontSize: 45.0)),
           ),
           body: GestureDetector(
-            behavior: HitTestBehavior.translucent, //or HitTestBehavior.opaque
+            behavior: HitTestBehavior.translucent,
             onTap: () {
               setState(() {
                 _increment();
@@ -61,7 +61,7 @@ class MainWidgetState extends State<MainWidget> {
                   'Hey there' +
                       '\nnumbers of tap $counter' +
                       "\nNow $mainColor",
-                  style: const TextStyle(fontSize: 32.0)),
+                  style: const TextStyle(fontSize: 80.0)),
             ),
           ),
         ));
